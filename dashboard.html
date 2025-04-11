@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cormorant Garamond', serif; 
+            background: -webkit-linear-gradient(to right, #556270, #4ECDC4);  
+            background: linear-gradient(to right, #556270, #4ECDC4); 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin: 0;
+            position: relative;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Gambar Buku (Kiri Atas Kotak) */
+        .book-icon {
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            width: 60px;
+            height: 60px;
+        }
+
+        /* Gambar Bolpoin (Kanan Atas Kotak) */
+        .pen-icon {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            width: 60px;
+            height: 60px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 28px;
+        }
+
+        h1 span {
+            color: hsl(53, 55%, 94%);
+        }
+
+        p {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .register a {
+            color: hsl(60, 3%, 21%);
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Book Icon" class="book-icon">
+        
+        <div class="dashboard">
+            <h1>Welcome to <span>To-Do List</span></h1>
+            <p>Manage your tasks efficiently</p>
+        </div>
+        <p class="register">Don't have an account? <a href="index.php">Sign up here</a></p>
+    </section>
+</body>
+</html>
